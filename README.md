@@ -1,2 +1,2 @@
 # HelperApp
-Home assistant Helper App 
+Home assistant Helper App  
