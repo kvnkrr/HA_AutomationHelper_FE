@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "node.js": "^0.0.1-security"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "helperapp",
+  "description": "Home assistant HelperApp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnkrr/HelperApp.git"
+  },
+  "author": "KK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvnkrr/HelperApp/issues"
+  },
+  "homepage": "https://github.com/kvnkrr/HelperApp#readme"
+}
