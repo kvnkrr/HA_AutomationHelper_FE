@@ -10,7 +10,6 @@
   "description": "Home assistant HelperApp",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kvnkrr/HelperApp.git"
