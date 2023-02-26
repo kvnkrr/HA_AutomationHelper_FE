@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Navigationbar } from './components/navigationbar';
 import { Home } from './components/home';
 import { Refuge } from './components/refuge';
+import { Ookla } from './components/ookla';
 
 
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/refuge" element={<Refuge/>}/>
+          <Route path="/ookla" element={<Ookla/>}/>
         </Routes>
       </Router>  
   );

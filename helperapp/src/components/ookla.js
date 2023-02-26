@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
-export const Home = () => {
+export const Ookla = () => {
   const [imageSrc, setImageSrc] = useState('');
 
 
