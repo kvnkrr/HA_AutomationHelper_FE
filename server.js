@@ -14,8 +14,13 @@ app.get('/refuge', (req, res) => {
 
 
 app.get('/', (req, res) => {
+  res.sendFile('./homePage.png', {root: __dirname});
+});
+
+app.get('/ookla', (req, res) => {
   res.sendFile('./logo512.png', {root: __dirname});
 });
+
 app.listen(2090, () => {
   console.log('Server listening on port 2090');
 });
