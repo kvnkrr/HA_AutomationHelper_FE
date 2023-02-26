@@ -2,6 +2,26 @@ const express = require('express');
 const app = express();
 
 
+const https = require('https');
+
+function getFastComSpeed() {
+  return new Promise((resolve, reject) => {
+    https.get('https://fast.com/', (res) => {
+      let data = '';
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+      res.on('end', () => {
+        resolve(data);
+      });
+    }).on('error', (err) => {
+      reject(err);
+    });
+  });
+}
+
+
+
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
@@ -18,7 +38,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/ookla', (req, res) => {
-  res.sendFile('./logo512.png', {root: __dirname});
+  res.sendFile('./homePage.png', {root: __dirname});
 });
 
 app.listen(2090, () => {
