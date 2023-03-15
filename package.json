@@ -1,24 +1,20 @@
 {
-  "dependencies": {
-    "express": "^4.18.2",
-    "lzma-native": "^8.0.6",
-    "node.js": "^0.0.1-security"
-  },
+  "name": "gh-actions-docker",
+  "private": true,
+  "version": "0.0.4",
   "scripts": {
-    "start": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "name": "helperapp",
-  "description": "Home assistant HelperApp",
-  "version": "1.0.0",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kvnkrr/HelperApp.git"
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "author": "KK",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kvnkrr/HelperApp/issues"
-  },
-  "homepage": "https://github.com/kvnkrr/HelperApp#readme"
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.15"
+  }
 }
