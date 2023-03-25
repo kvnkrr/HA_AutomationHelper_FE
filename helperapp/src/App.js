@@ -16,9 +16,9 @@ function App() {
           <Route path="/refuge" element={<Refuge/>}/>
           <Route path="/ookla" element={<Ookla/>}/>
         </Routes>
-      </Router>  
+      </Router>   
   );
 }
-
+ 
 export default App;
 
