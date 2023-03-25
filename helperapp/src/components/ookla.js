@@ -8,7 +8,7 @@ export const Ookla = () => {
   useEffect(() => {
     async function getImage() {
       try {
-        const response = await fetch('http://localhost:2090/');
+        const response = await fetch('http://localhost:9005/');
         const imageBlob = await response.blob();
         const objectURL = URL.createObjectURL(imageBlob);
         setImageSrc(objectURL);
