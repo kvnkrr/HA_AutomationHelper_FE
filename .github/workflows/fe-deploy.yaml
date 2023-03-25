@@ -1,12 +1,7 @@
 name: Build Container for react app and push to live 
-
 on:
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+  push: 
 
 jobs: 
   build-and-deploy-front:
