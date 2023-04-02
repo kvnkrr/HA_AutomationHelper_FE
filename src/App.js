@@ -17,7 +17,7 @@ function App() {
           <Route path="/ookla" element={<Ookla/>}/>
         </Routes>
       </Router>   
-  );
+  );  
 }
  
 export default App;
