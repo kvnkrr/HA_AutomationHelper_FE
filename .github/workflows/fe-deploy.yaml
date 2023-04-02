@@ -18,7 +18,7 @@ jobs:
         repository: kvnkrruk/ha_automationhelper_fe
         dockerfile: ha_automationhelper_fe/Dockerfile
 
-    container_armsixtyfour_architecture_app_to_registry:
+  container_armsixtyfour_architecture_app_to_registry:
     name: Build and Deploy Docker image 
     runs-on: ubuntu-latest
     steps:
