@@ -36,9 +36,8 @@ jobs:
         port: ${{ secrets.PORT }}
         command_timeout: 200m
         script: 
-          echo "${{ secrets.PASSWORD }}" | sudo -S ./Update.sh
-  
-          # echo ${{ secrets.PASSWORD }} | sudo -S docker stop my-fe-helper-app
-          #echo ${{ secrets.PASSWORD }} | sudo -S docker rm   my-fe-helper-app
-          #echo ${{ secrets.PASSWORD }} | sudo -S docker rmi  kvnkrruk/ha_automationhelper_fe
-          #echo ${{ secrets.PASSWORD }} | sudo -S docker run -t -d -p 9002:9005 --name my-fe-helper-app kvnkrruk/ha_automationhelper_fe
+          #echo "${{ secrets.PASSWORD }}" | sudo -S ./Update.sh
+          echo ${{ secrets.PASSWORD }} | sudo -S docker stop my-fe-helper-app
+          echo ${{ secrets.PASSWORD }} | sudo -S docker rm   my-fe-helper-app
+          echo ${{ secrets.PASSWORD }} | sudo -S docker rmi  kvnkrruk/ha_automationhelper_fe
+          echo ${{ secrets.PASSWORD }} | sudo -S docker run -t -d -p 9002:9005 --name my-fe-helper-app kvnkrruk/ha_automationhelper_fe
