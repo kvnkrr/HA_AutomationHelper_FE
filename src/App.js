@@ -6,7 +6,7 @@ import { Refuge } from './components/refuge';
 import { Ookla } from './components/ookla';
 
 
-
+/* main app function for home automation helper   */
 function App() {
   return (
       <Router>
