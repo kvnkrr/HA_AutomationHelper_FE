@@ -9,7 +9,8 @@ export const Refuge = () => {
   useEffect(() => {
     async function getImage() {
       try {
-        const response = await fetch('http://raspberrypi44.duckdns.org:9005/refuge');
+        const response = await fetch('http://raspberrypi44.duckdns.org:9005/refuge'); 
+        /*const response = await fetch('http://localhost:9005/'); */
         const imageBlob = await response.blob();
         const objectURL = URL.createObjectURL(imageBlob);
         setImageSrc(objectURL);
