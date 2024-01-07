@@ -4,11 +4,14 @@ import React, { useState, useEffect } from 'react';
 export const Home = () => {
   const [imageSrc, setImageSrc] = useState('');
 
-/* set to loal host */ 
+/* set to loal host or to prodcution server */ 
+
   useEffect(() => {
     async function getImage() {
       try {
-        const response = await fetch('http://localhost:9005/');
+        /* For Production 
+        const response = await fetch('http://localhost:9005/');*/
+        console.log("Front end calling production server ");
         const response = await fetch('http://raspberrypi44.duckdns.org:3000/');
         const imageBlob = await response.blob();
         const objectURL = URL.createObjectURL(imageBlob);
@@ -17,6 +20,9 @@ export const Home = () => {
       } catch (error) {
         console.error(error);
       }
+
+      /* set to loal host or to prodcution server */ 
+
     }
     getImage();
   }, []);
