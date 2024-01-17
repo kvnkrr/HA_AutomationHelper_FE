@@ -12,7 +12,7 @@ export const Home = () => {
         /* For Production 
         const response = await fetch('http://localhost:9005/');*/
         console.log("Front end calling production server ");
-        const response = await fetch('http://raspberrypi44.duckdns.org:3000/');
+        const response = await fetch('http://raspberrypi44.duckdns.org:9005/');
         const imageBlob = await response.blob();
         const objectURL = URL.createObjectURL(imageBlob);
         console.log('here');
