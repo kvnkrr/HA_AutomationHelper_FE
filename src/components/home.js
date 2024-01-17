@@ -21,8 +21,6 @@ export const Home = () => {
         console.error(error);
       }
 
-      /* set to loal host or to prodcution server */ 
-
     }
     getImage();
   }, []);
