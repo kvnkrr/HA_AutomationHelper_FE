@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 
+export function Ookla() {
+  window.location.assign("https://www.actiontiles.com");
+}
+
+
+/*
 export const Ookla = () => {
   const [imageSrc, setImageSrc] = useState('');
 
@@ -9,7 +15,7 @@ export const Ookla = () => {
       try {
         /*const response = await fetch('http://localhost:9005/');*/
         /* ........*/
-        const response = await fetch('http://raspberrypi44.duckdns.org:9005/ookla');
+       /* const response = await fetch('http://raspberrypi44.duckdns.org:9005/ookla');
         const imageBlob = await response.blob();
         const objectURL = URL.createObjectURL(imageBlob);
         setImageSrc(objectURL);
@@ -28,4 +34,4 @@ export const Ookla = () => {
     </div>
     </jumbotron>  
   );
-}
+} */
