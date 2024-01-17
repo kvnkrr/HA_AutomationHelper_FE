@@ -7,7 +7,7 @@ export const Refuge = () => {
 
 
   useEffect(() => {
-    async function getImage() {
+    async function getImage() { 
       try {
         const response = await fetch('http://raspberrypi44.duckdns.org:9005/refuge'); 
         /*const response = await fetch('http://localhost:9005/refuge'); */
